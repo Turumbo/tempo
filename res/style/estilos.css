@@ -1,0 +1,171 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background: url("../img/background.png");
+}
+
+.centered{
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+
+nav{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(225, 225, 225, 0.5);	
+	border-radius: 10px;
+	width: 23%;
+	height: 70px;
+}
+
+#banner{
+	background-color: rgba(225, 225, 225, 0.5);	
+	height: 70px;
+	font-weight:normal;
+	color:#4862B7;
+	font-size: 2em;
+	text-align:center;
+	font-family: arial black;
+}
+
+#formulario{
+	margin-top: 280px;
+	transition: margin-top 1s;
+}
+
+.navbar-contents{
+	padding: 5px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #AAA;
+}
+
+#nc-button{
+	margin-left: 10px;
+	width: 60px;
+}
+
+#gif{
+	position: absolute;
+	margin: 0px;
+	margin-top: 20px;
+	margin-left: 10px;
+	display: none; 
+	width: 30px;
+	padding: 0px;
+}
+
+article{
+	background-color: rgba(225, 225, 225, 0.65);	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	height: 550px;
+	width: 47%;
+	border-radius: 25px;
+	padding: 30px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#nomeCidade{
+	font-weight:normal;
+	color:#555;
+	font-size: 2.7em;
+	text-align:left;
+	font-family: Tahoma;
+}
+
+.lower{
+	margin-top: 20px;
+	height: 510px;
+}
+
+.left{
+	width: 49%;
+	height: 510px;
+	float: left;
+}
+
+.right{
+	width: 49%;
+	height: 510px;
+	float: right;
+}
+
+#tempValor{
+	font-weight:normal;
+	color:#555;
+	font-size: 2em;
+	font-family: Tahoma;
+	float: left;
+	margin-top: 5px;
+	margin-right: 20px;
+}
+
+table{
+	font-weight:normal;
+	color:#555;
+	font-size: 1em;
+	font-family: Tahoma;
+	width: 280px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+td + td{
+	text-align: left;
+	padding-left: 100px;
+}
+
+#tituloMapa{
+	font-weight:normal;
+	color:#555;
+	font-size: 2em;
+	font-family: Tahoma;
+	width: 100%;
+	height: 20px;
+	margin-bottom: 50px;
+	margin-top: 5px;
+}
+
+#googleMap{
+	width:100%;
+	height:340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

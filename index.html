@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="res/style/estilos.css"/>
+	<meta charset="utf-8"/>
+	<title>Tempo</title>
+</head>
+<body>
+	<header>
+		<div id="banner" class="centered">O Tempo</div>
+	</header>
+
+	<nav class="centered" id="formulario">
+		<input class="navbar-contents" type="text" id="nc-field" placeholder="Nome da cidade"></input>
+		<input class="navbar-contents" id="nc-button" type="button" onClick="buscar()" value="Enviar"></input>
+		<img id="gif" src="res/img/loading.gif"/>
+	</nav>
+
+	<article id="artigo">
+		<div id="nomeCidade"></div>
+		<hr>
+		<div class="lower">
+			
+			<div class="left">
+				
+				<div>
+					<img id="tempImg"/>
+					<span id="tempValor"></span>
+				</div>
+
+				<table id="tabela">
+					<tbody>
+						<tr><td>Máxima</td><td></td></tr>
+						<tr><td>Mínima</td><td></td></tr>
+						<tr><td>Nascer-do-sol<br></td><td></td></tr>
+						<tr><td>Pôr-do-sol</td><td></td></tr>
+						<tr><td>Latitude</td><td></td></tr>
+						<tr><td>Longitude</td><td></td></tr>
+						<tr><td>Altura</td><td></td></tr>
+					</tbody>
+				</table>
+				
+			</div>
+
+			<div class="right">
+				<div id="tituloMapa">
+					<span>Mapa</span>
+				</div>
+				<div id="googleMap"></div>
+			</div>
+		</div>
+
+	</article>
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="res/script/script.js"></script>	
+</body>
+</html>
