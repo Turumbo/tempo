@@ -22,7 +22,7 @@ function buscar(){
 	var cidade = document.getElementById("nc-field").value;
 	document.getElementById("gif").style.display = "block";
 
-	req.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=' + cidade + '&appid=8a647d241d321d29784d0425ec44e1d2');
+	req.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=' + cidade + '&appid=8a647d241d321d29784d0425ec44e1d2');
 	req.send(null);
 }
 
