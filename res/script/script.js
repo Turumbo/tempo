@@ -1,5 +1,4 @@
 var req = new XMLHttpRequest;
-var reqElev = new XMLHttpRequest;
 
 function toCelsius(f) {
     return f - 273.15;
@@ -22,7 +21,7 @@ function buscar(){
 	var cidade = document.getElementById("nc-field").value;
 	document.getElementById("gif").style.display = "block";
 
-	req.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=' + cidade + '&appid=8a647d241d321d29784d0425ec44e1d2');
+	req.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=' + cidade + '&appid=8a647d241d321d29784d0425ec44e1d2');
 	req.send(null);
 }
 
@@ -42,9 +41,6 @@ function carregarInformacoes() {
 	var lat = tabela.rows[4].cells[1].innerHTML = resp_obj['coord']['lat'];
 	var lon =tabela.rows[5].cells[1].innerHTML = resp_obj['coord']['lon'];
 
-	reqElev.open('GET', 'https://maps.googleapis.com/maps/api/elevation/jsonp?locations=' + lat + ',' + lon + '&key=AIzaSyCOCnj2CFR3wdYBHzi2paDyR7bZkj9gsLY');
-	reqElev.send(null);
-
 	google.maps.event.addDomListener(window, 'load', initialize(lat, lon));
 
 	var form = document.getElementById("formulario");
@@ -55,14 +51,4 @@ function carregarInformacoes() {
 	document.getElementById("artigo").style.opacity = "1";
 }
 
-function obterAltitude(){
-	var resp = reqElev.responseText;
-	var resp_obj = JSON.parse(resp);
-	alert('ue');
-	tabela.rows[6].cells[1].innerHTML = resp_obj['results']['elevation'].toFixed(1);
-}
-
 req.onloadend = carregarInformacoes;
-reqElev.onloadend = obterAltitude;
-
-
